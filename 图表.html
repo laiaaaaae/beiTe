@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="lib/jquery-1.12.4.js"></script>
+    <script src="lib/echarts.min.js"></script>
+</head>
+<body>
+    <div id="main" style="width: 600px;height:400px;"></div>
+    <script>
+      var myChart = echarts.init(document.getElementById('main'));
+      var option = {
+    backgroundColor: '#2c343c',
+
+    title: {
+        text: 'Customized Pie',
+        left: 'center',
+        top: 20,
+        textStyle: {
+            color: '#ccc'
+        }
+    },
+
+    tooltip: {
+        trigger: 'item',
+        formatter: '{a} <br/>{b} : {c} ({d}%)'
+    },
+    series: [
+        {
+            name: '访问来源',
+            type: 'pie',
+            radius: ['5%','70'],
+            center: ['50%', '50%'],
+            color:['#006cff', '#60cda0', '#ed8884', '#ff9f7f', '#0096ff', '#9fe6b8', '#32c5e9', '#1d9dff'],
+            data: [
+              { value: 20, name: '云南' },
+              { value: 26, name: '北京' },
+              { value: 24, name: '山东' },
+              { value: 25, name: '河北' },
+              { value: 20, name: '江苏' },
+              { value: 25, name: '浙江' },
+              { value: 30, name: '四川' },
+              { value: 42, name: '湖北' }
+],
+            roseType: 'radius',
+            animationType: 'scale',
+            animationEasing: 'elasticOut',
+            animationDelay: function (idx) {
+                return Math.random() * 200;
+            }
+        }
+    ]
+};
+myChart.setOption(option);
+    </script>
+    
+    
+    
+</body>
+</html>

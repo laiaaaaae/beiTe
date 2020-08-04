@@ -1,0 +1,247 @@
+.colorRED {
+  color: #ed3f35;
+}
+.colorYellow {
+  color: yellow;
+}
+.colorGreen {
+  color: #6acca3;
+}
+.colorBLUE {
+  color: #0b4fc3;
+}
+body {
+  height: 100vh;
+  color: #fff;
+  background: url("../images/bg.jpg") no-repeat;
+}
+body header img {
+  width: 100%;
+}
+body .box_main {
+  display: flex;
+  padding: 0 15px;
+}
+body .box_main .center_main {
+  flex: 1;
+}
+body .box_main .left_main {
+  width: 380px;
+  margin: -27px 15px 0 0;
+}
+body .box_main .left_main .left-Topbox {
+  height: 78px;
+  border-image-source: url("../images/border.png");
+  border-style: solid;
+  border-image-slice: 48 40 18 98;
+  border-image-width: 48px 40px 18px 98px;
+  margin-bottom: 15px;
+}
+body .box_main .left_main .left-Topbox .TopboxNum {
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+  text-align: center;
+}
+body .box_main .left_main .left-Topbox .TopboxNum li {
+  margin-top: 10px;
+}
+body .box_main .left_main .left-Topbox .TopboxNum li .TopboxFont {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #006cff;
+}
+body .box_main .left_main .left-Centerbox {
+  height: 334px;
+  border-image-source: url("../images/border.png");
+  border-style: solid;
+  border-image-slice: 48 40 18 98;
+  border-image-width: 48px 40px 18px 98px;
+  margin-bottom: 15px;
+}
+body .box_main .left_main .left-Centerbox .left-Centerbox-head {
+  margin: 10px 0 7px 16px;
+  display: flex;
+  font-size: 16px;
+  font-weight: 600;
+}
+body .box_main .left_main .left-Centerbox .left-Centerbox-head span {
+  padding: 0 5px;
+  color: #00f2f1;
+}
+body .box_main .left_main .left-Centerbox .left-Centerbox-title {
+  width: 346px;
+  height: 26px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-left: 16px;
+  display: flex;
+  justify-content: space-around;
+}
+body .box_main .left_main .left-Centerbox .left-Centerbox-title li {
+  color: #3c79cd;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+body .box_main .left_main .left-Centerbox .left-Centerbox-content {
+  height: 234px;
+  text-align: center;
+  overflow: hidden;
+}
+body .box_main .left_main .left-Centerbox .left-Centerbox-content li {
+  animation: ani-li 1s linear infinite;
+  color: #3c79cd;
+  padding-top: 10px;
+}
+@keyframes ani-li {
+  100% {
+    transform: translateY(-100%);
+  }
+}
+body .box_main .left_main .left-downbox {
+  height: 240px;
+  border-image-source: url("../images/border.png");
+  border-style: solid;
+  border-image-slice: 48 40 18 98;
+  border-image-width: 48px 40px 18px 98px;
+  padding: 20px 15px 20px;
+}
+body .box_main .left_main .left-downbox .left-downbox-header {
+  font-size: 14px;
+}
+body .box_main .left_main .left-downbox .left-downbox-content {
+  display: flex;
+}
+body .box_main .left_main .left-downbox .left-downbox-content .left-downbox-pic {
+  width: 231px;
+  height: 180px;
+}
+body .box_main .left_main .left-downbox .left-downbox-content .left-downbox-num {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 118px;
+  height: 164px;
+  font-size: 14px;
+  background: url("../images/rect.png") no-repeat;
+  background-size: cover;
+  padding-left: 26px;
+}
+body .box_main .left_main .left-downbox .left-downbox-content .left-downbox-num span {
+  font-size: 12px;
+  color: #4a97f8;
+}
+body .box_main .right_mian {
+  width: 390px;
+  margin: -27px 0 0;
+}
+body .box_main .right_mian .right_main-top {
+  height: 100px;
+  border-image-source: url("../images/border.png");
+  border-style: solid;
+  border-image-slice: 48 40 18 98;
+  border-image-width: 48px 40px 18px 98px;
+  padding: 10px 0 20px 28px;
+}
+body .box_main .right_mian .right_main-top .rmian-top-hand {
+  display: flex;
+  font-size: 14px;
+}
+body .box_main .right_mian .right_main-top .rmian-top-hand div {
+  margin-right: 15px;
+  color: #133e9b;
+}
+body .box_main .right_mian .right_main-top .rmian-top-hand span {
+  margin-right: 15px;
+  color: #00d7ff;
+}
+body .box_main .right_mian .right_main-top .rmian-top-hand .active {
+  color: #fff;
+}
+body .box_main .right_mian .right_main-top .rmian-top-content {
+  width: 100%;
+  display: flex;
+}
+body .box_main .right_mian .right_main-top .rmian-top-content div {
+  flex: 1;
+  font-size: 16px;
+  margin: 4px 0 0;
+}
+body .box_main .right_mian .right_main-top .rmian-top-content div span {
+  font-size: 12px;
+  color: #4a97f8;
+}
+body .box_main .right_mian .right_main-statistics {
+  position: relative;
+  height: 174px;
+  border-image-source: url("../images/border.png");
+  border-style: solid;
+  border-image-slice: 48 40 18 98;
+  border-image-width: 48px 40px 18px 98px;
+  margin-top: 15px;
+  padding: 16px 0 0 28px;
+}
+body .box_main .right_mian .right_main-statistics .right_main-statistics-head {
+  display: flex;
+  align-items: center;
+}
+body .box_main .right_mian .right_main-statistics .right_main-statistics-head div {
+  width: 18px;
+  height: 18px;
+  margin-right: 20px;
+  font-size: 14px;
+  color: #133e9b;
+}
+body .box_main .right_mian .right_main-statistics .right_main-statistics-head span {
+  margin: 0 20px;
+  font-size: 14px;
+  color: #00efff;
+}
+body .box_main .right_mian .right_main-statistics .right_main-statistics-head .statistics-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+body .box_main .right_mian .right_main-statistics .right_main-statistics-head .active {
+  background-color: #4c9bfd;
+  color: #fff;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+}
+body .box_main .right_mian .right_main-statistics .right_main-statistics-pic {
+  position: relative;
+  height: 115px;
+  width: 345px;
+}
+body .box_main .right_mian .right_main-statistics .statistics-content {
+  position: absolute;
+  left: 70px;
+  font-size: 10px;
+  color: #4a97f8;
+}
+body .box_main .right_mian .right_main-content {
+  height: 162px;
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+body .box_main .right_mian .right_main-content .right_main-content-left {
+  width: 48%;
+  height: 100%;
+  border-image-source: url("../images/border.png");
+  border-style: solid;
+  border-image-slice: 48 40 18 98;
+  border-image-width: 48px 40px 18px 98px;
+  padding: 14px 0 0 18px;
+}
+body .box_main .right_mian .right_main-content .right_main-content-right {
+  width: 48%;
+  height: 100%;
+  border-image-source: url("../images/border.png");
+  border-style: solid;
+  border-image-slice: 48 40 18 98;
+  border-image-width: 48px 40px 18px 98px;
+  padding: 14px 0 0 18px;
+}
